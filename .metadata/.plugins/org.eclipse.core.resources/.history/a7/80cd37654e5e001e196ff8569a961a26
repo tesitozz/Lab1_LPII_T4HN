@@ -1,0 +1,11 @@
+package com.examen;
+
+public class Empleado {
+	private int idEmpleado;
+	private String nombres;
+	private String apellidos;
+	private int edad;
+	private String sexo;
+	private int salario;
+
+}

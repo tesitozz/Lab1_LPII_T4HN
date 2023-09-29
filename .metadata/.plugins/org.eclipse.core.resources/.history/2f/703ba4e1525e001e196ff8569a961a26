@@ -1,0 +1,30 @@
+package controllers;
+
+import org.hibernate.cfg.Configuration;
+
+import com.mysql.cj.Session;
+import com.mysql.cj.xdevapi.SessionFactory;
+
+import models.Empleado;
+
+public class EmpleadoController {
+	
+	public String createEmpleado(String nombres,String apellidos,String sexo) {
+		
+		org.hibernate.SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Empleado.class).buildSessionFactory();
+		
+		Session session = sessionFactory.openSession();
+		
+		try {
+			
+			
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+        return "Empleado Creado";		
+	}
+
+}
